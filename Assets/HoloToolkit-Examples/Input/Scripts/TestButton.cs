@@ -12,6 +12,9 @@ namespace HoloToolkit.Unity.InputModule.Tests
     /// </summary>
     public class TestButton : MonoBehaviour, IInputClickHandler, IFocusable
     {
+        public GameObject go;
+        private bool display = true;
+        
         public Transform ToolTip;
         public Renderer ToolTipRenderer;
 
