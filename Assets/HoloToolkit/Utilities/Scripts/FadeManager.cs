@@ -15,8 +15,9 @@ using UnityEngine.VR.WSA;
 
 namespace HoloToolkit.Unity
 {
-    public class FadeManager : Singleton<FadeManager>
-    {
+    public class FadeManager : Singleton<FadeManager> {
+        public GameObject go;
+        private bool display = true;
         [Tooltip("If true, the FadeManager will update the shared material. Useful for fading multiple cameras that each render different layers.")]
         public bool FadeSharedMaterial;
 
