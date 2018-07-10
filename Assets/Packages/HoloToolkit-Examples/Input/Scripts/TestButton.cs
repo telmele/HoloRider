@@ -214,6 +214,8 @@ namespace HoloToolkit.Unity.InputModule.Tests
                 Activated(this);
             }
 
+            display = !display;
+            go.SetActive(display);
             eventData.Use(); // Mark the event as used, so it doesn't fall through to other handlers.
         }
 
