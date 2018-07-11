@@ -32,14 +32,11 @@ public class GestureManager : MonoBehaviour, IInputClickHandler {
 //			DestroyImmediate(placeholder, true);
 			end = cursor.position;
 			Vector3 offset = end - start;
-			Debug.Log(offset);
 			Vector3 position = start + offset / 2.0f;
 			var cylinder = Instantiate(platform, position, Quaternion.identity);
 			cylinder.transform.up = offset;
-			cylinder.transform.localScale = new Vector3(cylinderWidth, offset.magnitude, cylinderWidth);
+			cylinder.transform.localScale = new Vector3(cylinderWidth, offset.magnitude*3, cylinderWidth);
 			start = end;
 		}
-		//DoStuff
-		Debug.Log("Tap");
 	}
 }
