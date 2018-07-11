@@ -22,9 +22,8 @@ GameObject:
   - component: {fileID: 23237600517285108}
   - component: {fileID: 64963934250589612}
   - component: {fileID: 33782928714915654}
-  - component: {fileID: 136422959001385360}
   m_Layer: 0
-  m_Name: Pipe
+  m_Name: PipePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,13 +35,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1745157953958250}
-  m_LocalRotation: {x: -0.56180316, y: -0.42014834, z: -0.565958, w: 0.43306372}
-  m_LocalPosition: {x: -127.2, y: 50.8, z: 19.2}
-  m_LocalScale: {x: 5, y: 103.37762, z: 5}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -105.811, y: 266.696, z: -356.18903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!23 &23237600517285108
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -57,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 944463113244f4bf8b05c1757cd838a4, type: 2}
+  - {fileID: 2100000, guid: 795598d31a7f0624aba7718909031d12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,17 +96,4 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 0}
---- !u!136 &136422959001385360
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1745157953958250}
-  m_Material: {fileID: 13400000, guid: a06e6bf2f13b1a748a9ac7db20772f5b, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.50000066
-  m_Height: 2.0000007
-  m_Direction: 1
-  m_Center: {x: -0.46984684, y: 1.0000004, z: -0.17101045}
+  m_Mesh: {fileID: 4300002, guid: 5308c0eb5c6ed4647b3797671dc2e5f3, type: 3}
