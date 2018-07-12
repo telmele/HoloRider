@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114211680804559660}
   m_Layer: 0
   m_Name: PlatformManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,4 +59,5 @@ MonoBehaviour:
   - {fileID: 1094761913398066, guid: d66047aeb8375a94ea53e6dabafb56dc, type: 2}
   placeholder: {fileID: 1108657397441752, guid: a3506d4ec11fc474481ea89ed17da32c,
     type: 2}
+  player: {fileID: 1275400870023382, guid: 8adc58a7230d694479369cf0221f0fbe, type: 2}
   cylinderWidth: 0.25

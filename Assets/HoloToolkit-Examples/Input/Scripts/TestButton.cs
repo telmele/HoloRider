@@ -2,6 +2,7 @@
 // Licensed under the MIT License. See LICENSE in the project root for license information.
 
 using UnityEngine;
+using UnityEditor;
 
 namespace HoloToolkit.Unity.InputModule.Tests
 {
@@ -13,6 +14,7 @@ namespace HoloToolkit.Unity.InputModule.Tests
     public class TestButton : MonoBehaviour, IInputClickHandler, IFocusable
     {
         public Transform ToolTip;
+        public GestureManager gm;
         public Renderer ToolTipRenderer;
 
         private float toolTipTimer = 0.0f;
@@ -34,6 +36,8 @@ namespace HoloToolkit.Unity.InputModule.Tests
 
         private AnimatorControllerParameter[] animatorHashes;
         private Material cachedToolTipMaterial;
+
+        public string typeButton;
 
         private bool focused;
         public bool Focused
@@ -199,6 +203,24 @@ namespace HoloToolkit.Unity.InputModule.Tests
 
         public void OnInputClicked(InputClickedEventData eventData)
         {
+            switch(typeButton)
+            {
+                case "reset":
+                    Debug.Log("reset");
+                    gm.play();
+                    break;
+                case "clearmap":
+                    Debug.Log("clearmap");
+                    gm.reset();
+                    break;
+                case "undo":
+                    Debug.Log("undo");
+                    gm.undo();
+                    break;
+                default:
+                    Debug.Log("default");
+                    break;
+            }
             if (!EnableActivation)
             {
                 return;
