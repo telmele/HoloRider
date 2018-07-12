@@ -52,6 +52,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 0}
-  platform: {fileID: 1745157953958250, guid: 8aaa92de2e99e334ead06207f17fc5d2, type: 2}
-  placeholder: {fileID: 0}
+  parent: {fileID: 0}
+  platforms:
+  - {fileID: 1080113527826462, guid: 3828b0dcd05689143be5c45bdb500bbc, type: 2}
+  - {fileID: 1493802749221522, guid: 1265cd5d70fb5b943a9505da748c2924, type: 2}
+  - {fileID: 1094761913398066, guid: d66047aeb8375a94ea53e6dabafb56dc, type: 2}
+  placeholder: {fileID: 1108657397441752, guid: a3506d4ec11fc474481ea89ed17da32c,
+    type: 2}
   cylinderWidth: 0.25

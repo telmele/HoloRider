@@ -157,9 +157,42 @@ Prefab:
       propertyPath: cursor
       value: 
       objectReference: {fileID: 499606162}
+    - target: {fileID: 114211680804559660, guid: 0096d604b262de541a75951918ff3918,
+        type: 2}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 392935331}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0096d604b262de541a75951918ff3918, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &392935330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 392935331}
+  m_Layer: 0
+  m_Name: Pipes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &392935331
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 392935330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22132027, y: 0.3512476, z: 1.3732957}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &499606162 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011792100794, guid: a611e772ef8ddf64d8106a9cbb70f31c,
