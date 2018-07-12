@@ -41,6 +41,8 @@ public class GestureManager : MonoBehaviour, IInputClickHandler {
 			Vector3 offset = end - start;
 			Vector3 position = start + offset / 2.0f;
 			GameObject cylinder = Instantiate(platforms[1], position, Quaternion.identity, parent);
+			cylinder.SendMessage("setStart", start);
+			cylinder.SendMessage("setEnd", end);
 			pipes.Add(cylinder);
 			cylinder.transform.up = offset;
 			cylinder.transform.localScale = new Vector3(cylinderWidth, offset.magnitude*3, cylinderWidth);
